@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Private Tour | Calcagino-Hamilton</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo"><a href="housing.html">Calcagino<span>-Hamilton</span></a></div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="luxury-properties.html">Properties</a></li>
+                <li><a href="buying.html">Services</a></li>
+                <li><a href="book-tour.html" class="active">Book a Tour</a></li>
+                <li><a href="housing.html#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <section class="booking-hero">
+        <div>
+            <h1>Reserve a <span class="gold-text">Private Viewing</span></h1>
+            <p>Experience Santa Barbara's most distinguished estates with a personally curated, chauffeured tour of our exclusive collection.</p>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <div class="booking-container">
+            <div id="bookingFormWrapper" class="booking-form-wrapper">
+                <h2>Schedule <span class="gold-text">Your Tour</span></h2>
+                <form id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookName">Full Name</label>
+                            <input type="text" id="bookName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookEmail">Email Address</label>
+                            <input type="email" id="bookEmail" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookPhone">Telephone</label>
+                            <input type="tel" id="bookPhone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookGuests">Guests</label>
+                            <select id="bookGuests" class="form-control">
+                                <option value="1">1 Guest</option>
+                                <option value="2" selected>2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5+">5+ Guests</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookDate">Preferred Date</label>
+                            <input type="date" id="bookDate" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookTime">Preferred Time</label>
+                            <select id="bookTime" class="form-control" required>
+                                <option value="">Select a time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookProperty">Area of Interest</label>
+                        <select id="bookProperty" class="form-control" required>
+                            <option value="">Select a neighbourhood</option>
+                            <option value="Montecito Estates">Montecito Estates</option>
+                            <option value="Hope Ranch">Hope Ranch</option>
+                            <option value="Santa Barbara Riviera">Santa Barbara Riviera</option>
+                            <option value="East Beach">East Beach</option>
+                            <option value="Oceanfront Collection">Oceanfront Collection</option>
+                            <option value="Full Portfolio Tour">Full Portfolio Tour</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookNotes">Additional Notes</label>
+                        <textarea id="bookNotes" class="form-control" rows="3" placeholder="Any preferences, accessibility needs, or specific estates of interest..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gold btn-full">Reserve My Tour</button>
+                </form>
+            </div>
+
+            <div id="confirmationMessage" class="confirmation-message">
+                <i class="fas fa-check-circle"></i>
+                <h3>Tour Reserved</h3>
+                <p>Thank you, <strong id="confirmName"></strong>.</p>
+                <p>Your private viewing is scheduled for:</p>
+                <p><strong id="confirmDate"></strong> at <strong id="confirmTime"></strong></p>
+                <p>Area: <strong id="confirmProperty"></strong></p>
+                <p class="confirmation-note">Our concierge team will contact you within 24 hours to confirm arrangements.</p>
+                <button id="resetBookingBtn" class="btn btn-gold btn-mt">Reserve Another Tour</button>
+            </div>
+
+            <div class="booking-info">
+                <h2>The <span class="gold-text">Experience</span></h2>
+                <div class="booking-info-card">
+                    <h4><i class="fas fa-clock"></i> Duration</h4>
+                    <p>Each private tour spans approximately two to three hours, allowing ample time to experience each property and its surroundings.</p>
+                </div>
+                <div class="booking-info-card">
+                    <h4><i class="fas fa-car"></i> Chauffeured Transport</h4>
+                    <p>Complimentary luxury vehicle service is provided. Collection from your hotel, residence, or the airport arranged upon request.</p>
+                </div>
+                <div class="booking-info-card">
+                    <h4><i class="fas fa-user-tie"></i> Personal Guide</h4>
+                    <p>A senior Calcagino-Hamilton advisor accompanies you throughout, offering intimate knowledge of each estate and neighbourhood.</p>
+                </div>
+                <div class="booking-info-card">
+                    <h4><i class="fas fa-glass-cheers"></i> Hospitality</h4>
+                    <p>Premium refreshments are provided during your tour. Every detail is attended to ensure a memorable experience.</p>
+                </div>
+                <div class="booking-info-card">
+                    <h4><i class="fas fa-shield-alt"></i> Absolute Discretion</h4>
+                    <p>Your personal details and property interests remain strictly confidential. Privacy is fundamental to how we operate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bookings-list">
+        <div class="section-title">
+            <span class="section-subtitle">Your Schedule</span>
+            <h2>Upcoming <span class="gold-text">Tours</span></h2>
+        </div>
+        <div id="bookingsContainer" class="bookings-container"></div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Calcagino-Hamilton</h3>
+                <p>Santa Barbara's foremost luxury real estate advisory, specialising in distinguished properties across Montecito and the coastal region.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="luxury-properties.html">Properties</a></li>
+                    <li><a href="buying.html">Buying</a></li>
+                    <li><a href="selling.html">Selling</a></li>
+                    <li><a href="investment.html">Investments</a></li>
+                    <li><a href="property-management.html">Management</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>123 Coast Village Road<br>Montecito, CA 93108</p>
+                <p>(267) 761-46451</p>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Calcagino-Hamilton Real Estate Partners</p></div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></div>
+    <script src="scripts.js"></script>
+</body>
+</html>

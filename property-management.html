@@ -3,75 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Property Management | La Maison Dorée</title>
+    <title>Estate Management | Calcagino-Hamilton</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- Same head content -->
 </head>
 <body>
-    <!-- Header -->
     <header id="header">
-        <div class="logo">La Maison <span class="gold-text">Dorée</span></div>
+        <div class="logo"><a href="housing.html">Calcagino<span>-Hamilton</span></a></div>
         <nav>
             <ul id="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="buying.html">Buying</a></li>
-                <li><a href="selling.html">Selling</a></li>
-                <li><a href="luxury-properties.html">Luxury Properties</a></li>
-                <li><a href="investment.html">Investment</a></li>
-                <li><a href="property-management.html" class="active">Management</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="luxury-properties.html">Properties</a></li>
+                <li><a href="buying.html" class="active">Services</a></li>
+                <li><a href="book-tour.html">Book a Tour</a></li>
+                <li><a href="housing.html#contact">Contact</a></li>
             </ul>
-            <div class="mobile-menu-btn" id="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+            <div class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="service-hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+    <section class="service-hero hero-management">
         <div class="service-hero-content">
-            <h1>Luxury <span class="gold-text">Property Management</span></h1>
-            <p>Preserve and enhance your Santa Barbara estate with our discreet, white-glove management services tailored for high-net-worth owners.</p>
+            <h1>Estate <span class="gold-text">Stewardship</span></h1>
+            <p>Preserve and enhance your Santa Barbara property with white-glove management services designed for the most discerning owners.</p>
         </div>
     </section>
 
-    <!-- Services -->
     <section class="service-process">
         <div class="section-title">
-            <h2>Comprehensive <span class="gold-text">Care</span></h2>
+            <span class="section-subtitle">Our Care</span>
+            <h2>Comprehensive <span class="gold-text">Services</span></h2>
         </div>
         <div class="process-steps">
             <div class="process-step">
-                <div class="step-number gold-text">1</div>
-                <h3>Luxury Rentals</h3>
-                <p>Premium tenant screening and $10k+ monthly lease management.</p>
+                <div class="step-number gold-text">I</div>
+                <h3>Luxury Lettings</h3>
+                <p>Premium tenant vetting and lease management for properties commanding $10,000 and above monthly.</p>
             </div>
             <div class="process-step">
-                <div class="step-number gold-text">2</div>
+                <div class="step-number gold-text">II</div>
                 <h3>Concierge Maintenance</h3>
-                <p>Vetted contractors for everything from pool care to smart home systems.</p>
+                <p>Vetted artisans and contractors for everything from pool care to smart home system management.</p>
             </div>
             <div class="process-step">
-                <div class="step-number gold-text">3</div>
-                <h3>Seasonal Preparation</h3>
-                <p>Storm readiness, fire prevention, and vacation home staging.</p>
+                <div class="step-number gold-text">III</div>
+                <h3>Seasonal Care</h3>
+                <p>Storm preparedness, fire prevention protocols, and vacation home staging throughout the year.</p>
             </div>
             <div class="process-step">
-                <div class="step-number gold-text">4</div>
+                <div class="step-number gold-text">IV</div>
                 <h3>Security</h3>
-                <p>24/7 monitoring and discreet patrols for unoccupied estates.</p>
+                <p>Round-the-clock monitoring and discreet patrols for unoccupied estates and seasonal residences.</p>
             </div>
             <div class="process-step">
-                <div class="step-number gold-text">5</div>
-                <h3>Lifestyle Services</h3>
-                <p>Private chefs, event planning, and yacht provisioning.</p>
+                <div class="step-number gold-text">V</div>
+                <h3>Lifestyle</h3>
+                <p>Private chefs, event coordination, yacht provisioning, and bespoke hospitality arrangements.</p>
             </div>
         </div>
     </section>
 
-    <!-- Management Tiers -->
-    <section class="tiers" style="padding: 100px 5%; background: var(--off-white);">
+    <section class="tiers">
         <div class="section-title">
+            <span class="section-subtitle">Tailored Plans</span>
             <h2>Service <span class="gold-text">Tiers</span></h2>
         </div>
         <div class="tiers-grid">
@@ -86,8 +80,8 @@
                 </ul>
             </div>
             <div class="tier-card featured">
-                <div class="featured-badge">Most Popular</div>
-                <h3>Privilège</h3>
+                <div class="featured-badge">Recommended</div>
+                <h3>Privilege</h3>
                 <div class="tier-price gold-text">$3,500<span>/month</span></div>
                 <ul class="tier-features">
                     <li><i class="fas fa-check gold-text"></i> Bi-weekly inspections</li>
@@ -98,34 +92,54 @@
             </div>
             <div class="tier-card">
                 <h3>Exclusif</h3>
-                <div class="tier-price gold-text">Custom</div>
+                <div class="tier-price gold-text">Bespoke</div>
                 <ul class="tier-features">
                     <li><i class="fas fa-check gold-text"></i> 24/7 dedicated staff</li>
                     <li><i class="fas fa-check gold-text"></i> Full lifestyle management</li>
-                    <li><i class="fas fa-check gold-text"></i> Discretion guarantee</li>
+                    <li><i class="fas fa-check gold-text"></i> Absolute discretion</li>
                     <li><i class="fas fa-check gold-text"></i> Global coordination</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="service-cta">
-        <h2>Entrust Your Estate to Experts</h2>
-        <p>Our management team includes former five-star hotel concierges and luxury developers.</p>
-        <a href="#contact" class="btn btn-gold">Request Proposal</a>
+        <h2>Entrust Your Estate to Us</h2>
+        <p>Our team includes former five-star hotel concierges and luxury estate professionals.</p>
+        <a href="book-tour.html" class="btn btn-gold">Request a Proposal</a>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <!-- Footer content -->
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Calcagino-Hamilton</h3>
+                <p>Santa Barbara's foremost luxury real estate advisory, specialising in distinguished properties across Montecito and the coastal region.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="luxury-properties.html">Properties</a></li>
+                    <li><a href="buying.html">Buying</a></li>
+                    <li><a href="selling.html">Selling</a></li>
+                    <li><a href="investment.html">Investments</a></li>
+                    <li><a href="property-management.html">Management</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>123 Coast Village Road<br>Montecito, CA 93108</p>
+                <p>(267) 761-46451</p>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Calcagino-Hamilton Real Estate Partners</p></div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <div class="back-to-top" id="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-
+    <div class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></div>
     <script src="scripts.js"></script>
 </body>
 </html>
